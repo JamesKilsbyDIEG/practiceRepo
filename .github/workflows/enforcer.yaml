@@ -19,7 +19,7 @@ jobs:
       - uses: actions/checkout@v4
       # Runs a single command using the runners shell
       - name: Check branch
-        if: github.base_ref == 'main' && github.head_ref != 'dev'
+        if: github.base_ref == 'main' && github.head_ref != 'develop'
         run: |
           echo "ERROR: You can only merge to main from dev."
             exit 1
